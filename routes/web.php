@@ -9,3 +9,12 @@ Route::get('/', function () {
 // Public Route
 Route::livewire('/login', 'login')
     ->name('login');
+
+// Admin Route
+Route::group([
+    'middleware' => ['auth'],
+    'prefix' => '/page',
+], function () {
+    Route::livewire('/dashboard', 'admin::dashboard')
+        ->name('dashboard');
+});

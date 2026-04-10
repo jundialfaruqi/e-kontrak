@@ -39,7 +39,7 @@ new #[Layout('layouts::login.app')] #[Title('Login')] class extends Component {
     public function mount()
     {
         if (Auth::check()) {
-            return $this->redirect('/dashboard', navigate: true);
+            return $this->redirect('/page/dashboard', navigate: true);
         }
     }
 
@@ -81,7 +81,7 @@ new #[Layout('layouts::login.app')] #[Title('Login')] class extends Component {
                 Session::forget($lockoutKey);
                 Session::regenerate();
 
-                return $this->redirect('/dashboard', navigate: true);
+                return $this->redirect('/page/dashboard', navigate: true);
             }
 
             // Handle failed login
