@@ -1,13 +1,18 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
 new class extends Component
 {
     //
- public function logout()
+public function logout()
     {
-        auth()->logout();
-        redirect()->to('/login');
+        Auth::logout();
+
+        session()->invalidate();
+        session()->regenerateToken();
+
+        return redirect('/login');
     }
 };

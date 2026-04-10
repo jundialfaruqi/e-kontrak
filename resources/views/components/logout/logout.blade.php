@@ -1,6 +1,6 @@
 <div>
     <dialog id="logout_modal_profile" class="modal modal-bottom sm:modal-middle backdrop-blur-sm">
-        <div class="modal-box">
+        <div class="modal-box rounded-t-2xl rounded-bl-none sm:rounded-2xl">
             <h3 class="font-bold text-lg uppercase tracking-tight">Konfirmasi Logout</h3>
             <p class="py-4 text-base-content/70">Apakah Anda yakin ingin keluar dari aplikasi?</p>
             <div class="modal-action">
