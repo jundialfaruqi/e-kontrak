@@ -39,11 +39,7 @@ new #[Layout('layouts::login.app')] #[Title('Login')] class extends Component {
     public function mount()
     {
         if (Auth::check()) {
-            $user = Auth::user();
-            if ($user && in_array($user->role, ['admin', 'superadmin'])) {
-                return $this->redirect('/dashboard', navigate: true);
-            }
-            return $this->redirect('/', navigate: true);
+            return $this->redirect('/dashboard', navigate: true);
         }
     }
 
@@ -85,13 +81,7 @@ new #[Layout('layouts::login.app')] #[Title('Login')] class extends Component {
                 Session::forget($lockoutKey);
                 Session::regenerate();
 
-                $user = Auth::user();
-
-                if (in_array($user->role, ['admin', 'superadmin'])) {
-                    return $this->redirect('/dashboard', navigate: true);
-                }
-
-                return $this->redirect('/', navigate: true);
+                return $this->redirect('/dashboard', navigate: true);
             }
 
             // Handle failed login
