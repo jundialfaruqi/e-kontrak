@@ -9,7 +9,7 @@
                 class="hidden md:flex md:w-1/2 bg-linear-to-br from-info/10 to-primary/5 p-12 flex-col justify-between relative overflow-hidden">
                 <div class="relative z-10">
                     <div class="flex items-center gap-0 mb-8">
-                        <img src="{{ asset('assets/logo/logo-pemko.webp') }}" alt="Logo"
+                        <img src="{{ asset('assets/logo/logo-pemko.webp') }}" alt="Logo Pemko"
                             class="h-10 w-10 object-contain opacity-80">
                         <div class="flex flex-col">
                             <span
@@ -63,7 +63,7 @@
                 </div>
 
                 <!-- Decorative Circles -->
-                <div class="absolute bottom-[-50px] left-[-50px] w-48 h-48 bg-info/10 rounded-full"></div>
+                <div class="absolute -bottom-12.5 -left-12.5 w-48 h-48 bg-info/10 rounded-full"></div>
             </div>
 
             <!-- Right Side: Login Form -->
@@ -116,7 +116,7 @@
                                 </span>
                             </label>
                             <input type="text" wire:model="email" placeholder="Contoh: email@example.com"
-                                class="input input-bordered bg-base-100/50 border-base-300 focus:border-primary focus:outline-none rounded-xl h-12 w-full italic @error('email') border-error @enderror"
+                                class="input input-bordered bg-base-100/50 focus:border-primary focus:outline-none rounded-xl h-12 w-full @error('email') border-error @enderror"
                                 autofocus />
                             @error('email')
                                 <label class="label p-0 mt-1">
@@ -145,7 +145,7 @@
                             <div class="relative">
                                 <input :type="showPassword ? 'text' : 'password'" wire:model="password"
                                     placeholder="Masukkan kata sandi kamu"
-                                    class="input input-bordered bg-base-100/50 border-base-300 focus:border-primary focus:outline-none rounded-xl h-12 w-full italic @error('password') border-error @enderror" />
+                                    class="input input-bordered bg-base-100/50 focus:border-primary focus:outline-none rounded-xl h-12 w-full @error('password') border-error @enderror" />
                                 <button type="button" @click="showPassword = !showPassword"
                                     class="absolute right-4 top-1/2 -translate-y-1/2 text-base-content/30 hover:text-primary transition-colors">
                                     <svg x-show="!showPassword" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -196,7 +196,7 @@
                     <div class="mt-12 flex items-center justify-center gap-4 opacity-80">
                         <img src="{{ asset('assets/logo/aman.webp') }}" alt="AMAN" class="h-6">
                         <img src="{{ asset('assets/logo/bangun-negeri.webp') }}" alt="Bangun Negeri" class="h-6">
-                        <img src="{{ asset('assets/logo/logo-diskominfo-pekanbaru.webp') }}" alt="Bangun Negeri"
+                        <img src="{{ asset('assets/logo/logo-diskominfo-pekanbaru.webp') }}" alt="Diskominfo"
                             class="h-6">
                     </div>
                 </div>
