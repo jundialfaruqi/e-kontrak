@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-inter: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 @source "../**/*.blade.php";
@@ -33,9 +35,9 @@
   --color-info-content: oklch(17.625% 0.017 214.515);
   --color-success: oklch(80.494% 0.077 197.823);
   --color-success-content: oklch(16.098% 0.015 197.823);
-  --color-warning: oklch(89.172% 0.045 71.47);
+  --color-warning: oklch(70% 0.213 47.604);
   --color-warning-content: oklch(17.834% 0.009 71.47);
-  --color-error: oklch(73.092% 0.11 20.076);
+  --color-error: oklch(63% 0.237 25.331);
   --color-error-content: oklch(14.618% 0.022 20.076);
   --radius-selector: 2rem;
   --radius-field: 0.5rem;
@@ -69,9 +71,9 @@
   --color-info-content: oklch(17.625% 0.017 214.515);
   --color-success: oklch(80.494% 0.077 197.823);
   --color-success-content: oklch(16.098% 0.015 197.823);
-  --color-warning: oklch(89.172% 0.045 71.47);
+  --color-warning: oklch(70% 0.213 47.604);
   --color-warning-content: oklch(17.834% 0.009 71.47);
-  --color-error: oklch(73.092% 0.11 20.076);
+  --color-error: oklch(63% 0.237 25.331);
   --color-error-content: oklch(14.618% 0.022 20.076);
   --radius-selector: 1rem;
   --radius-field: 0.5rem;

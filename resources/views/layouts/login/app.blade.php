@@ -3,10 +3,10 @@
 
 <!--
 
-  Name              : AMAN Arena
+  Name              : BPKAD E-REKAP
   Version           : 1.0
-  Date              : Februari 01, 2026
-  Url               : amanarena.pekanbaru.go.id
+  Date              : April 09, 2026
+  Url               : -
   Type              : Web APP
   Project Analyst   : Deni Hidayat
   Developer         : M. Jundi Al faruqi
@@ -29,7 +29,7 @@
     @livewireStyles
 </head>
 
-<body>
+<body class="font-sans">
     {{ $slot }}
 
     @livewireScripts
