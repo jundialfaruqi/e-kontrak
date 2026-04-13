@@ -246,7 +246,7 @@
                             class="h-10 w-10 sm:h-11 sm:w-11 object-contain">
                         <div class="flex flex-col">
                             <span
-                                class="font-black tracking-tighter uppercase text-base-content group-hover:text-base-content transition-colors leading-none">BPKAD</span>
+                                class="font-black tracking-wider uppercase text-base-content group-hover:text-base-content transition-colors leading-none">BPKAD</span>
                             <span
                                 class="text-[10px] tracking-widest uppercase text-base-content/50 group-hover:text-base-content/70 transition-colors leading-none">Badan
                                 Pengelola Keuangan & Aset Daerah</span>
@@ -388,6 +388,15 @@
                                             Manajemen User
                                             <span class="text-[8px] text-base-content opacity-50">
                                                 Lihat, Ubah dan Aktivasi User
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a wire:navigate href="#"
+                                            class="{{ request()->routeIs('manajemen-user*') || request()->routeIs('user*') ? 'active bg-base-300 text-base-content font-medium' : '' }} flex flex-col items-start gap-0.5">
+                                            Roles & Permissions
+                                            <span class="text-[8px] text-base-content opacity-50">
+                                                Manajemen Roles & Permissions
                                             </span>
                                         </a>
                                     </li>
